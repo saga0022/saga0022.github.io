@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------
+          CUSTOM STYLES
+---------------------------*/
+
+/* changing font and color of the html */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+/* ---------- 
+    MOBILE STYLES 
+---------- */ 
+
+ /* navigation style and font change */
+ nav#nav {
+    width: 100%;
+    background-color: #4d774e;
+    margin: 0;
+    border: #ffffff;
+    position: fixed;
+}
+
+/* updating navbar text styles */
+.nav a.nav-link {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.5em;
+}
+        
+/* making the site's full width */
+main#main {
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+/* updating home sections color and font */
+section#home {
+    background-color: #164a41;
+    font-family: inherit;
+}
+
+/* updating the h1 style and color */
+h1.page-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    margin: 50px 0 10px 0;
+}
+    
+/* updating style h2 headers */
+h2.section-title {
+    text-align: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 1em;
+}
+    
+/* updating home paragraph style  */
+p {
+    text-align: left;
+    line-height: 1.5em;
+    font-size: .9em;
+    color:#ffffff ;
+    margin: 50px 0 10px 0;
+}
+
+
+/* updating about sections background color and padding */
+section#about {
+    background-color: #9dc88d;
+    padding: 20px 0px 0px 0px;
+}
+
+/* updating about section paragraph, floating the image next to the paragpraph */
+.about p {
+    color: #4d774e;
+    font-size: 1.1rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin: 50px 0 10px;
+}
+
+
+/* updating contact section background color and adjusting the alignments */
+section#contact {
+    background-color: #4d774e;
+    padding: 100px 30px;
+}
+
+/* updating the size of the contact sections paragraph */
+.contact p {
+    font-size: 1.1rem;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin: 50px 0 10px;
+}
+
+/* fixing form width to not overflow */
+form.contact-form {
+    background-color: #164a41;
+    width: auto;
+    padding: 1.5em;
+}
+
+label.contact-form-label {
+font-size: 1rem;
+color: #ffffff;
+}
+
+/* updating textbox styles */
+input.contact-form-input,
+textarea.contact-form-input {
+padding: 0;
+margin: 0.5em 0;
+height: 2rem;
+border: none;
+background-color: #E9FFF9;
+margin: 1em 0;
+resize: vertical;
+}
+
+/* updating the the message box size */
+textarea.contact-form-input {
+height: 5rem;
+}
+
+/* updating the button style */
+button {
+width: 100%;
+height: 3em;
+border: none;
+background-color: #f1b24a;
+color: #164a41;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+/* updating the footers background color and padding */
+footer {
+background-color:#164a41;
+padding: 20px;
+}
+
+
+
+/* --------- 
+IPAD STYLES
+---------- */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+
+/* increasing the padding for home for iPad screens */
+section#home {
+height: 700px;
+padding: 300px 130px 50px 130px;
+}
+
+
+/* Moves the "Hello" lower down the centre of the screen */
+h1.page-title {
+font-size: 7rem;
+margin: 100px 0 30px 0;
+}
+
+img.about-image {
+float: left;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* updating the padding of the section for ipad style */
+section#about,
+section#contact {
+padding: 30px 130px 50px 130px;
+}
+
+footer {
+background-color: #164a41;
+padding: 30px 130px;
+}
+
+}
+
+
+/* ----------- 
+DESKTOP STYLES 
+------------ */
+
+@media screen and (min-width:1023px) {
+
+/* updating and setting the section */
+section#home,
+section#about,
+section#contact {
+padding: 100px 150px;
+}
+
+section#home {
+    height: 800px;
+}
+
+h1.page-title {
+    font-size: 8rem;
+    margin: 150px 0 30px 0;
+}
+
+
+h2.section-title {
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0 0 30px 0;
+}
+
+.home p {
+    max-width: 80%;
+    font-size: 2rem;
+}
+
+.about p,
+.contact p {
+    line-height: 2em;
+}
+
+.about h2 {
+    float: left;
+}
+
+img.about-image {
+    width: 360px;
+    float: right;
+}
+
+.about p {
+    font-size: 1.4rem;
+    clear: both;
+}
+
+section#contact::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact p {
+    width: 50%;
+    float: left;
+    font-size: 1.3rem
+}
+
+form.contact-form {
+    width: 40%;
+    float: right;
+}
+
+button {
+    width: 200px;
+    float: right;
+}
+
+footer {
+    padding: 30px 150px;
+}
+
+}
