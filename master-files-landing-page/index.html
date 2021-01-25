@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash</title>
+</head>
+<body>
+    <!-- Nav Area - where I put the logo.png -->
+    <nav id="nav" class="nav">
+        <img src="../master-files-landing-page/images/logo/logo.png" alt="dashlogo">
+    </nav>
+
+    <main id="main">
+
+        <!-- new section (header) - adding h1, the subhead and the image -->
+        <section id="header" class="header">
+            <h1 id="page-header">Want to be your own boss?</h1>
+            <p>Start today and make up to $30/hr driving your own device with Dash!</p>
+            <img src="/master-files-landing-page/images/bg-image/scooter.svg" alt="girl-scotter">
+        </section>
+
+        <!-- new section (apply form) - adding the form details with checkbox  and a button -->
+        <section id="apply" class="applynow">
+            <h2 class="section-title">Apply Now</h2>
+            <p>Enter your info below.</p>
+
+            <!-- apply form -->
+            <form class="apply-form">
+
+                <!-- creating the form -  first name -->
+                <div class="apply-form-section">
+                  <label class="apply-form-label">First name</label>
+                  <input class="apply-form-input" type="text">
+                </div>
+
+                <!-- creating the form - last name -->
+                <div class="apply-form-section">
+                  <label class="apply-form-label">Last name</label>
+                  <input class="apply-form-input" type="text">
+                </div>
+
+                <!-- creating the form - email address -->
+                <div class="apply-form-section">
+                  <label class="apply-form-label">Email address</label>
+                  <input class="apply-form-input" type="email">
+                </div>
+
+                <!-- creating the form - phone number -->
+                <div class="apply-form-section">
+                  <label class="apply-form-label">Phone number</label>
+                  <input class="apply-form-input" type="tel">
+
+                <!-- creating the form - i agree chechbox -->
+                </div><div class="apply-form-section">
+                  <input class="apply-form-input" type="checkbox">
+                  <label class="apply-form-label">I agree to dash terms</label>
+                </div>
+                
+                <!-- creating the form - submit button -->
+                <button type="submit">Drive With Us</button>
+
+            </form>
+
+            <p>Already applied? <a href="#">Check your application status here</a></p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>See how much you can earn with Dash.</p>
+        <p>how many hours do you need to drive with us this week?</p>
+        <form action="calculate-form">
+
+            <div class="calculate-form-section">
+                <label class="calculate-form-label">Hours</label>
+                <input class="calculate-form-input" type="time">
+            </div>
+
+            <div class="calculate-form-section">
+                <label class="calculate-form-label">City</label>
+                <input class="calculate-form-input" type="text">
+            </div>
+
+            <button type="submit">Calculate</button>
+
+            <section id="socmed" class="socmed">
+                <img class="socmed-image" src="/master-files-landing-page/images/icons/facebook.svg" alt="facebook">
+                <img class="socmed-image" src="/master-files-landing-page/images/icons/instagram.svg" alt="instagram">
+                <img class="socmed-image" src="/master-files-landing-page/images/icons/twitter.svg" alt="twitter">
+                <img class="socmed-image" src="/master-files-landing-page/images/icons/linkedin.svg" alt="linkedin">
+            </section>
+        </form>
+    </footer>
+</body>
+</html>
