@@ -105,15 +105,20 @@ nav img {
 
 /* ----- nav ----- */
 
+/* changing background color of the navigation */
+nav {
+	background: #f7f7ff;
+}
+
 /* making the h1 size bigger */
 #header h1 {
+	margin-top: 0px;
 	font-size: 5.5rem;
 	color: #333131;
 }
 
 /* making the headers paragraph font-sze bigger */
 .header p {
-
 	font-size: 2.3rem;
 	color: #333131;
 }
@@ -207,27 +212,32 @@ button[type=submit] {
 	text-decoration: none;
 }
 
+/* --------footer----------- */
+
+/* changing the font and background color in the footer */
 footer {
 	background: #fffd8c;
 	color: #333131;
 }
 
-
+/* making the h3 font bigger and adding padding around it */
 h3 {
 	font-size: 1.6rem;
 	padding: 1em 2em;
 }
 
+/* seeting a font size on the footer's paragraph and padding */
 footer p {
 	font-size: 1.4rem;
 	padding: .2em 2em;
 }
   
+/* removing the labell name of the input type of the apply form  */
 form label {
 	display: none;
 }
 
-/* making the checkbox bigger in size */
+/* making the number type bigger in size and adding paading, etc around it */
 footer input[type=number] {
 	border-radius: .5em;
 	border: none;
@@ -238,7 +248,7 @@ footer input[type=number] {
 	/* margin-left: 10px; */
 }
 
-
+/* updating the text type of the footer calculate form */
 footer input[type=text] {
 	border-radius: .5em;
 	border: none;
@@ -249,6 +259,7 @@ footer input[type=text] {
 	font-size: 1.5rem;
 }
 
+/* making the calculate form sit on one a line */
 .calculate-form-section {
 	padding-top: 25px;
 	padding-left:  50px;
@@ -274,12 +285,222 @@ form .socmed {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	flex-grow: 20px;
+	/* flex-grow: 20px; */
 }
 
 .socmed-image {
 	width: 45px;
 	height: 30%;
 	padding: 2em;
+}
+
+
+/* ------------------------
+        IPAD STYLE
+------------------------ */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+	/* making the site body's margin bigger */
+	main { 
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	/* setting logo image size for tablet version */
+	nav img {
+		width: 15%;
+		height: 15%;
+		margin-left: 60px;
+	}
+
+	
+	/* setting the h1 size for the tablet version - make it smaller compare to the mobile version */
+	#header h1 {
+		font-size: 5rem;
+	}
+
+	/* making the headers paragraph font-sze bigger */
+	.header p {
+		font-size: 1.4rem;
+		color: #333131;
+	}
+
+	/* making the girl-scooter responsive and smaller in size for the tablet version */
+	.header#header img{
+		max-width: 100%;
+		max-height: 100%;
+		display: block; /* <<< -- remove extra space below 	image */
+		padding-left: 25%;
+	}
+
+	.resize-girl-scooter{
+		width: 50%; 
+		}    
+
+	/*  ----- apply form ----- */
+
+	/* changing the font size of h2 to a smaller one*/
+	h2.section-title{
+		font-size: 2.8rem;
+		margin-bottom: .2em;
+	}
+
+	/* creating a box for the ipad style form  */
+	.apply-form {
+		color: #333131;
+		border: .5px solid transparent;
+	    display: block;
+		margin-top: 50px;
+		margin-bottom: 80px;
+	    padding: 1em 1em 1.5em 2em;
+	    box-sizing: border-box;
+		border-radius: 1.5em;
+		box-shadow: 2px 3px 10px 1px #333131;
+		font-size: 1.9rem;
+		background-color: #ffffff;
+	}
+
+	/* hiding the label names of the apply form */
+	.apply-form-section .apply-form-label {
+		display: none;
+	}
+
+	/* updating the size and background color of the apply 	form */
+	/* the form boxes */
+	.apply-form-input {
+		font-size:	1.5rem;
+		border: none;
+		width: 85%;
+		padding: 15px 20px;
+		margin-left:0px;
+		background-color: #f5f0f0;
+		border-radius: .5em;
+	}
+
+	/* changing the color of the placeholder text */
+	::placeholder {
+		color: #b9b5b5;
+		width: 55%;
+		opacity: 1;
+	}
+
+	/* making the checkbox smaller in size */
+	input[type=checkbox] {
+		width: 10%;
+		transform: scale(2);
+		padding: 5px;
+		/* margin-left: 5px; */
+	}
+
+	/* moving the checkboxx text a 15px to the left */
+	.checkboxtext {
+		font-size: 20px;
+		display: inline;
+		margin-left: 0px;
+	}
+
+	/* updating the buttons color size and text and bprder 	styles */
+	button[type=submit] {
+		color: #333131;
+		background-color: #57eeab;
+		border: none;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		border-radius: .2em;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: .4em 7em;
+	}
+
+	#apply p {
+		font-size: .9rem;
+		text-align: center;
+	}
+	/* changing the href color and text decoration */
+	#apply p a {
+		color: #ff8480;
+		text-decoration: none;
+	}
+
+	/* --------footer----------- */
+
+	/* changing the font and background color in the footer */
+	footer {
+		background: #fffd8c;
+		color: #333131;
+	}
+
+	/* making the h3 font smaller and adding padding around it */
+	h3 {
+		font-size: 1rem;
+		padding: 1em 4em;
+	}
+
+	/* setting a font size on the footer's paragraph and 	padding */
+	footer p {
+		font-size: .9rem;
+		padding: .2em 4.3em;
+	}
+	
+	/* removing the labell name of the input type of the apply 	form  */
+	form label {
+		display: none;
+	}
+
+	/* making the number type smaller in size and adding 	paading, etc around it */
+	footer input[type=number] {
+		border-radius: .5em;
+		border: none;
+		width: 90px;
+		transform: scale(1);
+		padding: 5px; /* size of the box */
+		font-size: 1rem;
+		/* margin-left: 10px; */
+	}
+
+	/* updating the text type of the footer calculate form */
+	footer input[type=text] {
+		border-radius: .5em;
+		border: none;
+		width: 200px;
+		transform: scale(1);
+		margin-left: 25px;
+		padding: .5em;
+		font-size: 1rem;
+	}
+
+	/* making the calculate form sit on one a line */
+	.calculate-form-section {
+		padding-top: 25px;
+		padding-left:  50px;
+		display: flex;
+		justify-content: start;
+		width: 50%;
+		font-size: 1rem;
+	}
+
+	footer button[type=submit] {
+		color: #f7f7ff;
+		background-color: #ff8480;
+		border: none;
+		text-transform: uppercase;
+		font-size: 1rem;
+		border-radius: .5em;
+		padding: .5em;
+	}
+	form .socmed {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		/* flex-grow: 2; */
+	}
+
+	.socmed-image {
+		width: 30px;
+		height: 30%;
+		padding: 1.5em;
+	}
+
 }
 

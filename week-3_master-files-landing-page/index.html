@@ -8,14 +8,14 @@
 </head>
 
 <body>
-    <!-- Nav Area - where I put the logo.png -->
+    <!-- Nav Area - where the logo of the site is located -->
     <nav>
         <img src = "/week-3_master-files-landing-page/images/logo/logo.png" alt="dashlogo" class="logo">
     </nav>
 
     <main id="main">
 
-        <!-- new section (header) - adding h1, the subhead and the image -->
+        <!-- header section - adding h1, the subhead and an image  -->
         <section id="header" class="header">
             <h1 id="page-header">Want to be your own boss?</h1>
             <p>Start today and make up to $30/hr driving your own device with Dash!</p>
@@ -25,31 +25,31 @@
         <!-- new section (apply form) - adding the form details with checkbox  and a button -->
         <section id="apply" class="applynow">
         
-            <!-- apply form -->
+            <!-- apply form  - this is where you can find a button and input type-->
             <form class="apply-form">
 
                 <h2 class="section-title">Apply Now</h2>
-            <p>Enter your info below.</p>
+                <p>Enter your info below.</p>
 
-                <!-- creating the form -  first name -->
+                <!-- creating the form with a text type-  first name -->
                 <div class="apply-form-section">
                     <label class="apply-form-label">First name </label>
                     <input class="apply-form-input" type="text" placeholder="First name">
                 </div>
 
-                <!-- creating the form - last name -->
+                <!-- creating the form  with another text and also using a placeholder - last name -->
                 <div class="apply-form-section">
                     <label class="apply-form-label">Last name</label>
                     <input class="apply-form-input" type="text"   placeholder="Last name">
                 </div>
 
-                <!-- creating the form - phone number -->
+                <!-- creating the form with a 'tel' type where user can only input phone numbers - phone number -->
                 <div class="apply-form-section">
-                    <label class="apply-form-label">Phone     number</label>
+                    <label class="apply-form-label">Phone number</label>
                     <input class="apply-form-input" type="tel" placeholder="Phone number">
                 </div>
 
-                <!-- creating the form - email address -->
+                <!-- creating the form - email address  where the code can only accept text that ends with a emaail suffixes-->
                 <div class="apply-form-section">
                     <label class="apply-form-label">Email address </label>
                     <input class="apply-form-input" type="email" placeholder="Email Address">
@@ -72,29 +72,40 @@
 
     </main>
 
+    <!-- ---------------
+            footer
+    ----------------  -->
     <footer>
         
+        <!-- the form where  you can find a  hours and city input -->
         <form action="calculate-form">
 
+            <!-- h3 -->
             <h3>See how much you can earn with Dash.</h3>
             <p>how many hours do you need to drive with us this week?</p>
 
             <div class="calculate-form-section">
+
             
+                <!-- creating the calculate form with the numbe type for the time -->
                 <div>
-                    <label for="Hours">Hours</label>
+                    <label id="Hours">Hours </label>
                     <input id="formhour" type="number" placeholder="Hours">
                 </div>
 
+                <!-- creating the calculate form with the text type for the places -->
                 <div>
-                    <label for="City">City</label>
+                    <label id="City">City</label>
                     <input id="formcity" type="text" placeholder="City">
                 </div>
+                
 
             </div>
 
+            <!-- submit button after finishing the two above labels.  -->
             <button type="submit">Calculate</button>
 
+            <!-- social media icons -->
             <div class="container">
                 <div class="socmed">
                     <img class="socmed-image" src="/week-3_master-files-landing-page/images/icons/facebook.svg" alt="facebook">
