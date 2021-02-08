@@ -75,18 +75,18 @@ h3 {
 /* changing the header's paragraph font to Montserrat Regular */
 p,
 .apply-form-label,
-.calculate-form-label {
+.calculate-form-section,
+.checkboxtext {
 	font-family: MyParagraphFont;
 }
 
-/* making the whole site's margin bigger */
-html {
+/* making the site body's margin bigger */
+
+main { 
 	margin: 1em;
 	padding-left: 25px;
 	padding-right: 25px;
-}
-
-body { 
+	background-color: #f7f7ff;
 	line-height: 1.3;
 }
 
@@ -100,6 +100,7 @@ img{
 nav img {
 	width: 34%;
 	height: 34%;
+	margin-left: 30px;
 }
 
 /* ----- nav ----- */
@@ -112,14 +113,15 @@ nav img {
 
 /* making the headers paragraph font-sze bigger */
 .header p {
+
 	font-size: 2.3rem;
 	color: #333131;
 }
 
 /* making the girl-scooter responsive  */
 .header#header img{
-	max-width: auto;
-	max-height: auto;
+	max-width: 100%;
+	max-height: 100%;
 	display: block; /* <<< -- remove extra space below image */
 }
 
@@ -127,13 +129,157 @@ nav img {
 	width: auto;        
 }    
 
-/* centering the image, girl in the scooter' */
-/* .header#header img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 15px; 
-	padding-left: 15px;
-	overflow: hidden ;
-} */
+/*  ----- apply form ----- */
+
+/* changing the font size of h2 */
+h2.section-title{
+	font-size: 3.8rem;
+	margin-bottom: .2em;
+}
+
+/* creating a box for the form  */
+.apply-form {
+	color: #333131;
+	border: 1px solid transparent;
+    display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+    padding: 1em 1.5em 1.5em 1em;
+    box-sizing: border-box;
+	border-radius: 1.5em;
+	box-shadow: 2px 3px 10px 1px #333131;
+	font-size: 1.5rem;
+	background-color: #ffffff;
+}
+
+/* hiding the label names of the apply form */
+.apply-form-section .apply-form-label {
+	display: none;
+}
+
+/* updating the size and background color of the apply form */
+.apply-form-input {
+	font-size: 	1.5rem;
+	border: none;
+	width: 350px;
+	padding: 15px 15px;
+	margin: .5em;
+	background-color: #f5f0f0;
+	border-radius: .5em;
+}
+
+/* changing the color of the placeholder text */
+::placeholder {
+	color: #b9b5b5;
+	opacity: 1;
+}
+
+/* making the checkbox bigger in size */
+input[type=checkbox] {
+	width: 15%;
+	transform: scale(3);
+	padding: 10px;
+	margin-left: 5px;
+}
+
+/* moving the checkboxx text a 15px to the left */
+.checkboxtext {
+	display: inline;
+	margin-left: 15px;
+}
+
+/* updating the buttons color size and text and bprder styles */
+button[type=submit] {
+	color: #333131;
+	background-color: #57eeab;
+	border: none;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	border-radius: .5em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: .5em 1.5em;
+}
+
+/* changing the href color and text decoration */
+#apply p a {
+	color: #ff8480;
+	text-decoration: none;
+}
+
+footer {
+	background: #fffd8c;
+	color: #333131;
+}
+
+
+h3 {
+	font-size: 1.6rem;
+	padding: 1em 2em;
+}
+
+footer p {
+	font-size: 1.4rem;
+	padding: .2em 2em;
+}
+  
+form label {
+	display: none;
+}
+
+/* making the checkbox bigger in size */
+footer input[type=number] {
+	border-radius: .5em;
+	border: none;
+	width: 90px;
+	transform: scale(1);
+	padding: .5em; /* size of the box */
+	font-size: 1.5rem;
+	/* margin-left: 10px; */
+}
+
+
+footer input[type=text] {
+	border-radius: .5em;
+	border: none;
+	width: 270px;
+	transform: scale(1);
+	margin-left: 25px;
+	padding: .5em;
+	font-size: 1.5rem;
+}
+
+.calculate-form-section {
+	padding-top: 25px;
+	padding-left:  50px;
+	display: flex;
+	justify-content: start;
+	width: 50%;
+	font-size: 1.5rem;
+}
+
+footer button[type=submit] {
+	color: #f7f7ff;
+	background-color: #ff8480;
+	border: none;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	border-radius: .5em;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	padding: 10px 110px;
+}
+
+form .socmed {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-grow: 20px;
+}
+
+.socmed-image {
+	width: 45px;
+	height: 30%;
+	padding: 2em;
+}
 
