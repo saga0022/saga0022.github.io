@@ -85,7 +85,7 @@ header {
     padding-bottom: 15px;
 }
 
-.arc nav {
+.arc-nav {
     padding: 10px;
 }
 
@@ -313,7 +313,11 @@ footer .site-footer {
 }
 
 /* ------------ TABLET ------------ */
-
-
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        float: left;
+        padding-right: 200px;
+    }
+}
 
 /* ------------ DESKTOP ------------ */
