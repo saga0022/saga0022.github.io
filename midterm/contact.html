@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- linking icons from Font Awesome -->
+    <script src="https://kit.fontawesome.com/03eab0b3fd.js" crossorigin="anonymous"></script>
+    
+    <!-- linking CSS to this HtML -->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking the font-family, from Google Font, that im going to use throughout the site -->
+
+    <title>ARC - Contact</title>
+</head>
+
+<body id="scrollup">
+    
+    <!-- header that contains the logo and the navigation links -->
+    <header> 
+        <div class="arc nav">
+            <img src="images/logo.svg" alt="ARClogo" class="logo">
+            <nav>
+                <!-- i put the '#' before the  attribute value to indicate that the link will submit to itself (current URL). It is like an empty action. -->
+                <a href="index.html">Home</a>
+                <a href="about.html" >About</a>
+                <a href="contact.html" class="current" >Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="cmain-one" id="cmain-one">
+        <!-- Feedback Section -->
+        <section class="feed-sect">
+            <div class="feed-grid">
+                <h1>We Want to Hear From You</h1>
+                <p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+                <img src="images/contact-img.svg" alt="icons and figures">
+            </div>
+
+            <!-- Contact Form -->
+            <form class="feedback-form" action="#" method="POST">
+                <h2>Contact us.</h2>
+
+                <!-- User enters full name here -->
+                <div>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                </div>
+
+                <!-- User enters student number here -->
+                <div>
+                    <label for="studentnumber">Student Number</label>
+                    <input type="text" name="studentnumber" id="studentnumber" placeholder="Student Number">
+                </div>
+
+                <!-- User enters email here -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+
+                <!-- User enters message here -->
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <!-- Using an anchor tag for the submit button to make styling easier -->
+                <a class="btn btn1" href="#">Submit</a>
+            </form>
+                 
+        </section>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="site-footer">
+            <p>Follow us</p>
+            <img src="icons/facebook.svg" alt="facebook">
+            <img src="icons/instagram.svg" alt="instagram">
+            <img src="icons/twitter.svg" alt="twitter">
+            <img src="icons/youtube.svg" alt="youtube">
+        </div>
+        
+        <div class="scroll-up">
+            <a href="#scrollup">
+                <img src="icons/arrow.svg" class="scroll-up-arrow" alt="scroll up arrow">
+            </a>
+            <p>back to top</p>
+        </div>
+            
+    </footer>
+
+</body>
+</html>

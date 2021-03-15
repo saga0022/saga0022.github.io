@@ -5,91 +5,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>ARS</title>
+    <!-- linking the font-family, from Google Font, that im going to use throughout the site -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- linking icons from Font Awesome -->
+    <script src="https://kit.fontawesome.com/03eab0b3fd.js" crossorigin="anonymous"></script>
+
+    <!-- linking CSS to this HtML -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ARC - Home</title>
     
 </head>
 
-<body>
-    <div class="container">
-
-        <!-- header with a class attributes and contains the logo and the navigation links -->
-        <header class="masthead">
-
-            <img src="images/logo.svg" alt="Academic Referral Centre Logo" class="logo">
-            
-            <!-- i put the '#' before the  attribute value to indicate that the link wil submit to itself (current URL). It is like an empty action. -->
-            <nav id="nav" class="navi">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#contact">Contact</a>
+<body id="scrollup">
+    <!-- header that contains the logo and the navigation links -->
+    <header> 
+        <div class="arc nav">
+            <img src="images/logo.svg" alt="ARClogo" class="logo">
+            <nav>
+                <!-- i put the '#' before the  attribute value to indicate that the link will submit to itself (current URL). It is like an empty action. -->
+                <a href="index.html" class="current">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
             </nav>
+        </div>
+    </header>
 
-        </header>
+    <main class="hmain-one" id="hmain-one">
 
-        <main class="content">
+        <!-- Discover ARC Section -->
+        <section class="discover-arc">
 
-            <section class="intro">
+            <div class="discone">
+
                 <h1>Discover Your ARC.</h1>
                 <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!
                 </p>
-
-                 <!-- using a list tag to show the facilities in Algonquin and putting an icon that match the words listed that can be found in Font Awesome site.  -->
-                <p><i class="fas fa-bowling-ball fa-lg"></i>Bowling</p>
-                <p><i class="fas fa-hiking"></i>Rock Climbing</p>
-                <p><i class="fas fa-dumbbell"></i>Fitness Center</p>
-                <p><i class="fas fa-basketball-ball"></i>Indoor Court</p>
-
-                <a href="#" class="btn">Get Started</a>
-                <img src="images/discover.svg" alt="girl reading">
-
-            </section>
-
-            <section class="app clearfix">
-                <img src="images/school.jpg" alt="graduation">
-
-                <div class="info">
-
-                    <h3>Discover.</h3>
-                    <h4>Algonquin College</h4>
-                    <a href="#" class="btn1">Learn More</a>
+                
+                <div class="discover-icons-container">
                     
-                </div>
-            </section>
+                    <!-- using a div to separate the icons for styling in different devices. The icons that was found in Font Awesome site is dowloaded to matched the facilities in Algonquin. -->
 
-          
-            <div class="quote">
-                <img src="images/simon.jpg" alt="president">
-                <p>Dijanelle Simon SA President</p>
-                <p>"Only with increased capacity can we expand and create a moreinclusive program that attracts a greater number of students toparticipate in physical and social activity. The Students'Association is committed to and focused on programming thatresults in our students taking person ownership for their health."
-                </p>
-            </div>
+                    <div class="bowling">
+                        <i class="fas fa-bowling-ball fa-2x"></i>
+                        <p>Bowling</p>
+                    </div>
+
+                    <div class="rock-climbing">
+                        <i class="fas fa-hiking fa-2x"></i>
+                        <p>Rock Climbing</p>
+                    </div>
+
+                    <div class="fitness-center">
+                        <i class="fas fa-dumbbell fa-2x"></i>
+                        <p>Fitness Center</p>
+                    </div>
+
+                    <div class="indoor-court">
+                        <i class="fas fa-basketball-ball fa-2x"></i>
+                        <p>Indoor Court</p>
+                    </div>
+                </div>
+
+                <div class="discone-image">
+
+                    <button class="btn" type="submit"> Get Started </button>
+                </div>
+                    
+                <img src="images/discover.svg" alt="girl reading" class="books">
             
+            </div>
+                
+            <!-- Display none for css mobile** -->
+            <div class="scroll-down">
+                <p>scroll</p>
+                <img class="scroll-down-icon"   src="icons/arrow.svg"  alt="scroll down arrow">
+            </div>
+    
+        </section>
 
-            <section class="ent">
-                <img src="images/entertainment.jpg" alt="drinking">
-                <div class="info">
-                    <h3>Discover</h3>
-                    <h4>The Entertainment</h4>
-                    <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
-                    <a href="#" class="btn1" id="learnmore">Learn More</a>
-                </div>
+        <!-- Discover Algonquin College Section -->
+        <section class="discover-ac">
+            
+            <img src="images/school.jpg" alt="graduation" class="disctwo">
 
+            <section class="discover-two"></section>
+                    
+                <h2>Discover.</h2>
+                <h3>Algonquin College</h3>
+                <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
+                    
             </section>
 
-            <footer class="site-footer">
-                <p>Follow us</p>
-                <ul class="social">
-                    <li><img src="icons/facebook.svg" alt="facebook"></li>
-                    <li><img src="icons/instagram.svg" alt="instagram"></li>
-                    <li><img src="icons/twitter.svg" alt="twitter"></li>
-                    <li><img src="icons/youtube.svg" alt="youtube"></li>
-                </ul>
+            <div class="btnc2">
+            <button class="lm" type="submit"> Learn More </button>
+            </div>
 
-            </footer>
-        </main>
-    </div>
+        </section>
+            
+        <!-- SA President Quote Section -->
+        <section id="quote">
+            <div class="pres-arc">
+                <img src="images/simon.jpg" alt="president" class="simon">
+            </div>
+            <h4>Dijanelle Simon <br>
+            SA President</h4>
+            <p>"Only with increased capacity can we expand and create a moreinclusive program that attracts a greater number of students toparticipate in physical and social activity. The Students'Association is committed to and focused on programming thatresults in our students taking person ownership for their health."
+            </p>
+            
+        </section>
+            
+        <!-- Discover Entertainment Section -->
+        <section class="ent">
+                <img src="images/entertainment.jpg" alt="drinking" class="enter">
+
+            <div class="info-ent">
+                <h2>Discover</h2>
+                <h3>The Entertainment</h3>
+                <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+                <div class="btnc2">
+                    <button class="lm" type="submit"> Learn More </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="site-footer">
+            <p>Follow us</p>
+            <img src="icons/facebook.svg" alt="facebook">
+            <img src="icons/instagram.svg" alt="instagram">
+            <img src="icons/twitter.svg" alt="twitter">
+            <img src="icons/youtube.svg" alt="youtube">
+        </div>
+        
+        <div class="scroll-up">
+            <a href="#scrollup">
+                <img src="icons/arrow.svg" class="scroll-up-arrow" alt="scroll up arrow">
+            </a>
+            <p>back to top</p>
+        </div>
+            
+    </footer>
+        
 </body>
 </html>
+    
